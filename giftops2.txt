@@ -1,0 +1,49 @@
+              GIFtoPS2 an OS/2 2.xx 32 bits application
+
+GiftoPS2 converts a GIF image file to a PostScript file.
+GiftoPS2 is freeware, you can modify it and add documentation for
+changes in GiftoPS2.c
+GiftoPS2 uses the standard output path, so you may direct output to
+printer or file( via command line redirection).
+
+
+usage: giftops2 [-els] [-c{copies}] [-w{width}] [-h{height}] [file]
+Where e = generate output as EPSF (Encapsulated PostScript File),
+          suitable for use with applications that support EPSF.
+      l = Landscape:  rotates image 90 degrees on page.
+      s = Alternate halftone: specifies halftone parameters for placement 
+          of "spots" -  90 degrees and 60 spots/inch. Called "screen" in the
+          source code, Because it creates a screen effect on the
+          printed image?
+      c = Number of copies for the printer to generate.
+      w = Width in inches on printed page.
+      h = Height in inches on printed page.
+      file = Filename.ext of GIF image file.
+
+Examples:
+      giftops2 neptune.gif >prn
+        Outputs image to printer using default width and height(7.5" X 9.0")
+        
+      giftops2 -l -w6.0 -h4.8 neptune.gif >prn
+        Outputs image to printer in landscape format 6.0" X 4.8"
+        
+        
+Note: The "screen" mode paramters (90 degrees at 60 spots/inch) can be changed
+      to whatever you want. A good range of values to play with are 35 - 45
+      degrees and 50 - 150 spots/inch. 
+
+
+       
+For any info or question:
+      Fabrizio Fioravanti     Internet:   fiora@mcculloch.ing.unifi.it
+      Maurizio Giunti         Fidonet:    2:332/102.3@fidonet.org
+ 
+
+
+      "The Graphics Interchange Format(c) is the Copyright property of
+      CompuServe Incorporated. GIF(sm) is a Service Mark property of
+      CompuServe Incorporated."
+
+      "PostScript" is a trademark of Adobe Systems Incorporated.
+
+
