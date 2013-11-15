@@ -5,7 +5,7 @@ GiftoPS2 converts a GIF image file to a PostScript file.
 
 LICENSE
 ===============
-* Freeware
+* Public Domain
 
 COMPILE TOOLS
 ===============
